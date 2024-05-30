@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen3"
+    android:duplicateParentState="false"
+    android:visibility="visible"
+    tools:context=".Productos">
+
+    <TextView
+        android:id="@+id/info_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRODUCTO"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/lampara"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/info_lampara"
+        app:layout_constraintEnd_toStartOf="@+id/Bombillo"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883"
+        app:srcCompat="@drawable/imagen4" />
+
+    <ImageView
+        android:id="@+id/Bombillo"
+        android:layout_width="148dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        app:srcCompat="@drawable/imagen5" />
+
+    <ImageView
+        android:id="@+id/Toma"
+        android:layout_width="126dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lampara"
+        app:layout_constraintVertical_bias="0.542"
+        app:srcCompat="@drawable/imagen6" />
+
+    <ImageView
+        android:id="@+id/Alambre"
+        android:layout_width="132dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toTopOf="@+id/info_alambre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@drawable/imagen7" />
+
+    <TextView
+        android:id="@+id/info_lampara"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:text="Lampara$30000 REF1234 "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/info_bombillo"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Bombillo $5000 REF2345"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/Alambre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toEndOf="@+id/info_lampara"
+        app:layout_constraintTop_toBottomOf="@+id/Bombillo"
+        app:layout_constraintVertical_bias="0.365"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/info_toma"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:text="TomaElectrica $7000 REF3456"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toma"
+        app:layout_constraintVertical_bias="0.361"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/info_alambre"
+        android:layout_width="124dp"
+        android:layout_height="75dp"
+        android:text="Alambre $170000 REF0123"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
